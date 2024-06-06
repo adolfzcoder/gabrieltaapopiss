@@ -447,6 +447,11 @@ animation: slideOutRight 1s forwards;
       margin: 10px 0;
     }
 
+
+
+
+
+
     /* CSS for footer */
     .footer {
       display: flex;
@@ -487,7 +492,21 @@ animation: slideOutRight 1s forwards;
       color: #a1a1a1;
       padding: 10px 20px;
     }
-
+    @media (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .bottom-links {
+    flex-direction: row;
+  }
+  
+  .bottom-links .links {
+    flex-direction: column;
+    margin: 0 40px;
+  }
+}
     /* Responsive styles */
     @media screen and (max-width: 768px) {
       .about-me {
@@ -632,7 +651,7 @@ animation: slideOutRight 1s forwards;
             <button class="hamburger-menu" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
             <ul class="navigation">
                 
-                <li><a href="gtapplication.pdf"><i class="fas fa-info-circle"></i> Application</li>
+                <li><a href="gtApplication.pdf"><i class="fas fa-download"></i> Application</li>
                 <!-- <li><a href="#"><i class="fas fa-tools"></i> Services</a></li> -->
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
